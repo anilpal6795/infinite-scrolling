@@ -19,5 +19,5 @@ export const useIOInfiniteScroll = (loaderRef, intersectionCallback) => {
     return () => {
       if (loaderRef.current) IO.unobserve(loaderRef.current);
     };
-  }, []);
+  }, [loaderRef]);
 };
