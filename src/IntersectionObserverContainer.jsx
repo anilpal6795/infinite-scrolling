@@ -1,6 +1,6 @@
 import { useState, useRef } from "react";
 import { getRandomCells } from "./utils";
-import { useIOInfiniteScroll } from "./hooks";
+import useIOInfiniteScroll from "./useIOInfiniteScroll";
 
 const InterSectionObserverContainer = () => {
   const loaderRef = useRef();

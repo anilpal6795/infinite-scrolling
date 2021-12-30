@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 
-export const useIOInfiniteScroll = (loaderRef, intersectionCallback) => {
+const useIOInfiniteScroll = (loaderRef, intersectionCallback) => {
   useEffect(() => {
     const IO = new IntersectionObserver(
       (entries) => {
@@ -21,3 +21,5 @@ export const useIOInfiniteScroll = (loaderRef, intersectionCallback) => {
     };
   }, [loaderRef]);
 };
+
+export default useIOInfiniteScroll;
