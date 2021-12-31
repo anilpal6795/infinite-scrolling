@@ -3,7 +3,7 @@ import InterSectionObserverContainer from "./IntersectionObserverContainer";
 
 const App = () => {
   return (
-    <div className="flex flex-col md:flex-row p-8 w-full h-screen">
+    <div className="infinite-scrolling">
       <OnScrollContainer />
       <InterSectionObserverContainer />
     </div>

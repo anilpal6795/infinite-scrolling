@@ -11,7 +11,7 @@ export const getRandomCells = (cellsCount, preset = 0) => {
     cells.push(
       <div
         key={`${bgColor}-${preset + i}`}
-        className="w-full py-8 text-center my-2 rounded"
+        className="color-cell"
         style={{
           backgroundColor: bgColor,
         }}

@@ -28,11 +28,11 @@ const OnScrollContainer = () => {
     []
   );
   return (
-    <div className="grow bg-white h-full p-4 mx-8 rounded drop-shadow-2xl">
-      <h1 className="text-2xl text-center">onScroll</h1>
+    <div className="scroll-section">
+      <h1 className="scroll-section__title">onScroll</h1>
       <div
         ref={containerRef}
-        className="mt-8 w-full h-5/6 overflow-y-auto rounded"
+        className="scroll-section__container"
         onScroll={onScrollCellsUpdateDebounced}
       >
         {onScrollCells}
